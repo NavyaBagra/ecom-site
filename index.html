@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>E-Commerce</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <!--Navigation Bar Starts-->
+   <div class="Header">
+    <nav>
+      <input type="checkbox" id="show-search" placeholder="search">
+      <input type="checkbox" id="show-menu" placeholder="show">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+      <div class="logo"><a href="#">E-Commerce</a></div>
+        <ul class="links">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Services</a>
+          </li>
+          <li>
+            <a href="#">Gallery</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+      <form action="#" class="search-box">
+        <input type="text" placeholder="Type Something to Search..." required>
+        <button type="submit" class="go-icon">
+          <i class="fas fa-long-arrow-alt-right"></i>
+        </button>
+      </form>
+    </nav>
+   </div>
+
+   <!--Navigation Bar Ends-->
+
+   <!--Slider Starts-->
+    <div class="main">
+      <div class="slideContainer" id="slider-container">
+          <div class="slides">
+              <img src="images/1.jpg" alt="error1" />
+              <div class="caption">Text 1</div>
+          </div>
+          <div class="slides">
+              <img src="images/2.jpg" alt="error2" />
+              <div class="caption">Text 2</div>
+          </div>
+          <div class="slides">
+              <img src="images/3.jpg" alt="error3" />
+              <div class="caption">Text 3</div>
+          </div>
+
+              <span class="arrow prev" onclick="controller(-1)">&#10094;</span>
+              <span class="arrow next" onclick="controller(1)">&#10095;</span>
+          </div>
+     </div>
+    <!--Slider Ends-->
+
+    <!--Cards Slider Starts-->
+
+    <div class="cardSliderContainer">
+      <div class="product-card" id="cardbox">
+         <!--  <div class="image">
+              <img src="images/1.jpg" class="slider_image">
+              <h1 class="slider_title">Card -1</h1>
+              <h4 class="slider_price">Price 200Rs</h4>
+              <button class="slider_button">Add to Cart</button>
+          </div>
+          <div class="image">
+              <img src="images/2.jpg" class="slider_image">
+              <h1 class="slider_title">Card -2</h1>
+              <h4 class="slider_price">Price 200Rs</h4>
+              <button class="slider_button">Add to Cart</button>
+          </div>
+          <div class="image">
+              <img src="images/3.jpg" class="slider_image">
+              <h1 class="slider_title">Card -3</h1>
+              <h4 class="slider_price">Price 200Rs</h4>
+              <button class="slider_button">Add to Cart</button>
+          </div>
+          <div class="image">
+              <img src="images/4.jpg" class="slider_image">
+              <h1 class="slider_title">Card -4</h1>
+              <h4 class="slider_price">Price 200Rs</h4>
+              <button class="slider_button">Add to Cart</button>
+          </div>
+          <div class="image">
+              <img src="images/5.jpg" class="slider_image">
+              <h1 class="slider_title">Card -5</h1>
+              <h4 class="slider_price">Price 200Rs</h4>
+              <button class="slider_button">Add to Cart</button>
+          </div>
+          <div class="image">
+              <img src="images/1.jpg" class="slider_image">
+              <h1 class="slider_title">Card -6</h1>
+              <h4 class="slider_price">Price 200Rs</h4>
+              <button class="slider_button">Add to Cart</button>
+          </div>
+          <div class="image">
+              <img src="images/2.jpg" class="slider_image">
+              <h1 class="slider_title">Card -7</h1>
+              <h4 class="slider_price">Price 200Rs</h4>
+              <button class="slider_button">Add to Cart</button>
+          </div>
+          <div class="image">
+              <img src="images/3.jpg" class="slider_image">
+              <h1 class="slider_title">Card -8</h1>
+              <h4 class="slider_price">Price 200Rs</h4>
+              <button class="slider_button">Add to Cart</button>
+          </div>
+          <div class="image">
+              <img src="images/4.jpg" class="slider_image">
+              <h1 class="slider_title">Card -9</h1>
+              <h4 class="slider_price">Price 200Rs</h4>
+              <button class="slider_button">Add to Cart</button>
+          </div>
+          <div class="image">
+              <img src="images/5.jpg" class="slider_image">
+              <h1 class="slider_title">Card -10</h1>
+              <h4 class="slider_price">Price 200Rs</h4>
+              <button class="slider_button">Add to Cart</button>
+          </div>
+      </div>
+      -->
+      <div class="btn-section">
+          <span class="arrow prev" onclick="prev()" >&#10094;</span>
+          <span class="arrow next" onclick="next()" >&#10095;</span>
+      </div>
+  </div>
+
+    </div>
+
+
+
+
+    <!--Card Slider Ends-->
+
+    <script src="script.js"></script>
+</body>
+</html>
